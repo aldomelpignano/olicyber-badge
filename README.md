@@ -1,53 +1,27 @@
-# Olicyber Badge Generator
+# Olicyber Badge Generator (Fork)
 
-A github workflow to generate cards like this:
+This repository is a **personal fork** of the original [Olicyber Badge Generator](https://github.com/utcq/ocbadge).  
 
-![My Card](./card.svg)
-
-# How To
-
-## Auth Token
-Go to the [Training Platform](training.olicyber.it), login. Then use the dev-tools to view the local storage and get your token.
-
-![DevTools](https://raw.githubusercontent.com/utcq/oca/refs/heads/main/assets/devtools.png)
-![Token](https://raw.githubusercontent.com/utcq/oca/refs/heads/main/assets/token.png)
+This fork introduces a few modifications for **privacy and convenience**, including:  
+- Removal of personal information (username, nickname) from the badge.  
+- Fixed the badge style to the “hacker” theme, no extra parameters required.  
+- Automated badge generation without additional setup.  
 
 ---
 
-## Methods
+## How It Works
 
-- [Automated Workflow](#automated-workflow)
-- [Local Generation](#local-generation)
+### Authentication Token
+- Log in to the [Training Platform](https://training.olicyber.it) and retrieve your token from the browser’s Local Storage, as in the original version.  
+- Add it as a secret named `OC_TOKEN` in your repository settings (Settings → Secrets and variables → Actions).
 
-## Automated workflow
-After forking the repo
+### Badge Generation
 
-> [!IMPORTANT]  
-> go to **Settings -> Secrets and variables -> Actions**
->
-> Create a new **Repository** secret named `OC_TOKEN` and insert the previously retrieved token
+**Automatic via GitHub Actions**  
+- The workflow is configured to generate the badge **every hour**.  
+- The badge is automatically saved as `card.svg` in the repository.
 
-### Manual Update Trigger
-The card is updated everyday at midnight (`UTC+1`) but you can update it manually:
-
-Proceed to **Actions -> Generate Card (on the left) -> Run workflow**
-
-When manually triggering the workflow, you can select a style from the dropdown menu:
-
-![Screen](data/actions.png)
-
-In the workflow run form, you'll see a "Card style" input field where you can choose between `default`, `dark`, `white`, or `darkRed`.
-
-### Embedding
-You now have to insert
-```html
-<img src="https://raw.githubusercontent.com/USER/ocbadge/main/card.svg"/>
-```
-in your github profile README
-## Local Generation
-```sh
+**Local Generation**  
+```bash
 export OC_TOKEN=*****
-python3 gen.py style
-```
-Where style is optional and can be one of: `default`, `dark`, `white`, or `darkRed`.
-The card will be saved in the execution dir as card.svg
+python3 gen.py
