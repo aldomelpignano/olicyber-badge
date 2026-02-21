@@ -1,0 +1,37 @@
+<svg width="350" height="200" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="matrixGlow"/>
+ </defs>
+ <!-- Background -->
+ <!-- Terminal Header -->
+ <!-- Main Content -->
+ <!-- Terminal-style divider -->
+ <!-- Stats in terminal style -->
+ <!-- Code animation (simulated) -->
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" stroke-width="2" stroke="#00ff41" fill="#0c0c0c" height="200" width="350"/>
+  <rect id="svg_2" fill="#131313" height="25" width="330" y="10" x="10"/>
+  <circle id="svg_3" fill="#ff5f57" r="7" cy="23.5" cx="331"/>
+  <circle id="svg_4" fill="#febc2e" r="7" cy="23" cx="313"/>
+  <circle id="svg_5" fill="#28c840" r="7" cy="23" cx="293"/>
+  <text id="svg_6" fill="#00ff41" font-size="14" font-family="monospace" text-anchor="middle" y="28" x="179.5">user@olicyber:~$</text>
+  <text id="svg_7" filter="url(#matrixGlow)" fill="#00ff41" font-size="16" font-weight="bold" font-family="monospace" y="55" x="20">USER PROFILE: </text>
+  <text style="cursor: move;" id="svg_9" fill="#00ff41" font-size="14" font-family="monospace" y="60" x="16.5">$ cat stats.json</text>
+  <text style="cursor: move;" id="svg_10" fill="#00ff41" font-size="14" font-family="monospace" y="81.5" x="21">{</text>
+  <text id="svg_11" fill="#00ff41" font-size="14" font-family="monospace" y="99.5" x="29.5">"score": "58678",</text>
+  <text id="svg_12" fill="#00ff41" font-size="14" font-family="monospace" y="122" x="30">"solved_challenges": "134",</text>
+  <text id="svg_13" fill="#00ff41" font-size="14" font-family="monospace" y="147" x="31">"rank": "314°",</text>
+  <text id="svg_14" fill="#00ff41" font-size="14" font-family="monospace" y="172.5" x="31">"best_category": "Network"</text>
+  <g id="svg_15" opacity="0.2">
+   <text id="svg_16" fill="#00ff41" font-size="10" font-family="monospace" y="80" x="200">01001001</text>
+   <text id="svg_17" fill="#00ff41" font-size="10" font-family="monospace" y="95" x="240">10101010</text>
+   <text id="svg_18" fill="#00ff41" font-size="10" font-family="monospace" y="110" x="210">01110001</text>
+   <text id="svg_19" fill="#00ff41" font-size="10" font-family="monospace" y="125" x="260">11100110</text>
+   <text id="svg_20" fill="#00ff41" font-size="10" font-family="monospace" y="140" x="220">10011011</text>
+   <text id="svg_21" fill="#00ff41" font-size="10" font-family="monospace" y="155" x="250">01010111</text>
+   <text id="svg_22" fill="#00ff41" font-size="10" font-family="monospace" y="170" x="230">11001101</text>
+  </g>
+  <text id="svg_25" fill="#00ff41" font-size="14" font-family="monospace" y="189.5" x="23.5">}</text>
+ </g>
+</svg>
